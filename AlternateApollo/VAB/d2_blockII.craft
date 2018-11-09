@@ -2,7 +2,7 @@ ship = d2_blockII
 version = 1.4.2
 description = 
 type = VAB
-size = 6.7844038,48.6125641,6.05157757
+size = 6.7844038,48.616127,6.05157757
 persistentId = 861156114
 rot = 0,0,0,0
 missionFlag = Squad/Flags/default
@@ -11,7 +11,7 @@ PART
 {
 	part = ApolloD2.capsule_4294519652
 	partName = Part
-	persistentId = 3478850657
+	persistentId = 402683270
 	pos = 1.70514321,25.8470669,-0.177702263
 	attPos = 0,0,0
 	attPos0 = 1.70514321,25.8470669,-0.177702263
@@ -413,7 +413,7 @@ PART
 {
 	part = ApolloD2.parachute_4294399114
 	partName = Part
-	persistentId = 2439758896
+	persistentId = 936056500
 	pos = 1.30761826,26.2981663,-0.177702263
 	attPos = 0,0,0
 	attPos0 = -0.397524983,0.451100349,0
@@ -539,7 +539,7 @@ PART
 {
 	part = ApolloD2.parachute_4294397864
 	partName = Part
-	persistentId = 176671876
+	persistentId = 1352521599
 	pos = 2.10266829,26.2981663,-0.177702263
 	attPos = 0,0,0
 	attPos0 = 0.397524983,0.451100349,0
@@ -665,7 +665,7 @@ PART
 {
 	part = ApolloD2.adapter_4294223070
 	partName = Part
-	persistentId = 2204243596
+	persistentId = 1071674479
 	pos = 1.70514321,24.9435577,-0.177702263
 	attPos = 0,0,0
 	attPos0 = 0,-0.90350914,0
@@ -893,8 +893,6 @@ PART
 	modSize = 0,0,0
 	link = ApolloD2.prop.skirt2_4294463076
 	link = ApolloD2.HGA_4294404712
-	link = ApolloD2.solar_4294370428
-	link = ApolloD2.solar_4294413056
 	attN = top,ApolloD2.adapter_4294223070_0|0|0
 	attN = bottom,ApolloD2.prop.skirt2_4294463076_0|-1.724375|0
 	EVENTS
@@ -1022,6 +1020,10 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = ApolloD2.AJ10_4294421484
+	link = ApolloD2.solar_4294370428
+	link = ApolloD2.solar_4294473910
+	link = ApolloD2.solar_4294473770
+	link = ApolloD2.solar_4294473630
 	attN = top,ApolloD2.prop_4294466164_0|0.348275|0
 	attN = eng1,ApolloD2.AJ10_4294421484_0|0.3475|0
 	EVENTS
@@ -1319,176 +1321,6 @@ PART
 		ACTIONS
 		{
 			StartTransmissionAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColliderHelper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = ApolloD2.solar_4294370428
-	partName = Part
-	persistentId = 3276779172
-	pos = 0.804758668,23.7831707,-0.177702203
-	attPos = 0,0,0
-	attPos0 = -0.900384545,-1.11451912,5.96046448E-08
-	rot = 4.11125356E-09,0.707106829,-0.707106829,-4.11125356E-09
-	attRot = -0.707106709,0,0,-0.707106709
-	attRot0 = 4.11125356E-09,0.707106829,-0.707106829,-4.11125356E-09
-	mir = 1,1,1
-	symMethod = Mirror
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = ApolloD2.solar_4294413056
-	srfN = srfAttach,ApolloD2.prop_4294466164
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDeployableSolarPanel
-		isEnabled = True
-		efficiencyMult = 1
-		launchUT = -1
-		currentRotation = (-0.707106829, 0, 0, 0.707106829)
-		storedAnimationTime = 0
-		storedAnimationSpeed = 1
-		deployState = RETRACTED
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ExtendPanelsAction
-			{
-				actionGroup = None
-			}
-			ExtendAction
-			{
-				actionGroup = None
-			}
-			RetractAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColliderHelper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = ApolloD2.solar_4294413056
-	partName = Part
-	persistentId = 2061691733
-	pos = 2.60552788,23.7831707,-0.177702203
-	attPos = 0,0,0
-	attPos0 = 0.900384665,-1.11451912,5.96046448E-08
-	rot = 0.707106888,-2.67973679E-08,2.67973626E-08,-0.70710665
-	attRot = -0.707106709,0,0,-0.707106709
-	attRot0 = 0.707106888,-2.67973679E-08,2.67973626E-08,-0.70710665
-	mir = 1,1,1
-	symMethod = Mirror
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = ApolloD2.solar_4294370428
-	srfN = srfAttach,ApolloD2.prop_4294466164
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDeployableSolarPanel
-		isEnabled = True
-		efficiencyMult = 1
-		launchUT = -1
-		currentRotation = (-0.707106829, 0, 0, 0.707106829)
-		storedAnimationTime = 0
-		storedAnimationSpeed = 1
-		deployState = RETRACTED
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ExtendPanelsAction
-			{
-				actionGroup = None
-			}
-			ExtendAction
-			{
-				actionGroup = None
-			}
-			RetractAction
 			{
 				actionGroup = None
 			}
@@ -2060,5 +1892,353 @@ PART
 		hideFlow = False
 		isVisible = True
 		flowMode = Both
+	}
+}
+PART
+{
+	part = ApolloD2.solar_4294370428
+	partName = Part
+	persistentId = 3276779172
+	pos = 1.13692641,22.614212,-0.745918989
+	attPos = 0,0,0
+	attPos0 = -0.568216801,-0.210828781,-0.568216741
+	rot = 1.47342831E-07,0.382683426,-8.48230712E-08,-0.923879564
+	attRot = 0,0.382683426,0,-0.923879504
+	attRot0 = 1.47342831E-07,0.382683426,-8.48230712E-08,-0.923879564
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = ApolloD2.solar_4294473910
+	sym = ApolloD2.solar_4294473770
+	sym = ApolloD2.solar_4294473630
+	srfN = srfAttach,ApolloD2.prop.skirt2_4294463076
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		efficiencyMult = 1
+		launchUT = -1
+		currentRotation = (-0.459229112, 0.537688196, 0.537688196, 0.459229112)
+		storedAnimationTime = 0
+		storedAnimationSpeed = -10
+		deployState = RETRACTED
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColliderHelper
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = ApolloD2.solar_4294473910
+	partName = Part
+	persistentId = 2872143289
+	pos = 1.13692641,22.614212,0.390514493
+	attPos = 0,0,0
+	attPos0 = -0.568216801,-0.210828781,0.568216741
+	rot = 4.42081465E-08,-0.382683456,-1.64166082E-07,-0.923879564
+	attRot = 0,0.382683426,0,-0.923879504
+	attRot0 = 4.42081465E-08,-0.382683456,-1.64166082E-07,-0.923879564
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = ApolloD2.solar_4294370428
+	sym = ApolloD2.solar_4294473770
+	sym = ApolloD2.solar_4294473630
+	srfN = srfAttach,ApolloD2.prop.skirt2_4294463076
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		efficiencyMult = 1
+		launchUT = -1
+		currentRotation = (-0.459229112, 0.537688196, 0.537688196, 0.459229112)
+		storedAnimationTime = 0
+		storedAnimationSpeed = -10
+		deployState = RETRACTED
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColliderHelper
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = ApolloD2.solar_4294473770
+	partName = Part
+	persistentId = 1165844916
+	pos = 2.27336001,22.614212,0.390514433
+	attPos = 0,0,0
+	attPos0 = 0.568216801,-0.210828781,0.568216681
+	rot = -8.48230783E-08,-0.923879564,-1.47342831E-07,-0.382683396
+	attRot = 0,0.382683426,0,-0.923879504
+	attRot0 = -8.48230783E-08,-0.923879564,-1.47342831E-07,-0.382683396
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = ApolloD2.solar_4294370428
+	sym = ApolloD2.solar_4294473910
+	sym = ApolloD2.solar_4294473630
+	srfN = srfAttach,ApolloD2.prop.skirt2_4294463076
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		efficiencyMult = 1
+		launchUT = -1
+		currentRotation = (-0.459229112, 0.537688196, 0.537688196, 0.459229112)
+		storedAnimationTime = 0
+		storedAnimationSpeed = -10
+		deployState = RETRACTED
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColliderHelper
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = ApolloD2.solar_4294473630
+	partName = Part
+	persistentId = 1601700308
+	pos = 2.27335978,22.614212,-0.745919049
+	attPos = 0,0,0
+	attPos0 = 0.568216562,-0.210828781,-0.568216801
+	rot = -1.64166082E-07,-0.923879564,-4.42081465E-08,0.382683456
+	attRot = 0,0.382683426,0,-0.923879504
+	attRot0 = -1.64166082E-07,-0.923879564,-4.42081465E-08,0.382683456
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = ApolloD2.solar_4294370428
+	sym = ApolloD2.solar_4294473910
+	sym = ApolloD2.solar_4294473770
+	srfN = srfAttach,ApolloD2.prop.skirt2_4294463076
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		efficiencyMult = 1
+		launchUT = -1
+		currentRotation = (-0.459229112, 0.537688196, 0.537688196, 0.459229112)
+		storedAnimationTime = 0
+		storedAnimationSpeed = -10
+		deployState = RETRACTED
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColliderHelper
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 }

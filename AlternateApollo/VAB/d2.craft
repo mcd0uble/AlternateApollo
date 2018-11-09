@@ -2,7 +2,7 @@ ship = d2
 version = 1.4.2
 description = 
 type = VAB
-size = 6.58522129,47.9322968,5.85032701
+size = 6.7844038,48.7843933,6.05157757
 persistentId = 861156114
 rot = 0,0,0,0
 missionFlag = Squad/Flags/default
@@ -22,12 +22,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 2
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 4
-	sepI = 3
+	sqor = 2
+	sepI = 2
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -424,12 +424,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 0
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 2
-	sepI = 3
+	sqor = 0
+	sepI = 2
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -550,12 +550,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 0
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 2
-	sepI = 3
+	sqor = 0
+	sepI = 2
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -676,12 +676,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 3
-	sepI = 2
+	sqor = 1
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -750,21 +750,21 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 2
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
 	link = ApolloD2.prop.skirt_4294455974
 	link = ApolloD2.rcs_4294413826
-	link = ApolloD2.rcs_4294413182
-	link = ApolloD2.rcs_4294413118
-	link = ApolloD2.rcs_4294413054
+	link = ApolloD2.rcs_4294488250
+	link = ApolloD2.rcs_4294488188
+	link = ApolloD2.rcs_4294488126
 	attN = top,ApolloD2.adapter_4294223070_0|0|0
 	attN = bottom,ApolloD2.prop.skirt_4294455974_0|-1.667063|0
 	EVENTS
@@ -775,6 +775,36 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleResourceConverter
+		isEnabled = True
+		EfficiencyBonus = 1
+		IsActivated = False
+		stagingEnabled = True
+		lastUpdateTime = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StopResourceConverterAction
+			{
+				actionGroup = None
+			}
+			StartResourceConverterAction
+			{
+				actionGroup = None
+			}
+			ToggleResourceConverterAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -851,12 +881,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 2
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -866,12 +896,10 @@ PART
 	link = ApolloD2.AJ10_4294423910
 	link = ApolloD2.AJ10_4294423800
 	link = ApolloD2.les.decoupler_4294051214
-	link = ApolloD2.les.decoupler_4294049672
-	link = ApolloD2.les.decoupler_4294049608
-	link = ApolloD2.les.decoupler_4294049544
-	link = ApolloD2.interstage_4294229884
+	link = ApolloD2.les.decoupler_4294487684
+	link = ApolloD2.les.decoupler_4294487622
+	link = ApolloD2.les.decoupler_4294487560
 	attN = top,ApolloD2.prop_4294467528_0|0|0
-	attN = bottom,ApolloD2.interstage_4294229884_0|-1.148188|0
 	attN = eng1,ApolloD2.AJ10_4294425624_0.3875|-0.1437062|0.3875
 	attN = eng2,ApolloD2.AJ10_4294424020_0.3875|-0.1437062|-0.3875
 	attN = eng3,ApolloD2.AJ10_4294423800_-0.3875|-0.1437062|0.3875
@@ -946,12 +974,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 4
+	istg = 3
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 5
-	sepI = 2
+	sqor = 3
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -1117,12 +1145,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 4
+	istg = 3
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 5
-	sepI = 2
+	sqor = 3
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -1288,12 +1316,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 4
+	istg = 3
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 5
-	sepI = 2
+	sqor = 3
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -1459,12 +1487,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 4
+	istg = 3
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 5
-	sepI = 2
+	sqor = 3
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -1617,336 +1645,32 @@ PART
 }
 PART
 {
-	part = ApolloD2.les.decoupler_4294051214
-	partName = Part
-	persistentId = 1906316259
-	pos = 0.951858521,22.6504402,0.575582325
-	attPos = 0,0,0
-	attPos0 = -0.753284693,-0.58018589,0.753284574
-	rot = -0.0556363426,0.378617465,-0.134318054,0.914063573
-	attRot = 0,0,0,1
-	attRot0 = -0.0556363724,0.378617465,-0.134318113,0.914063573
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 6
-	resPri = 0
-	dstg = 1
-	sidx = 0
-	sqor = 7
-	sepI = 6
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	link = ApolloD2.les_4294040774
-	sym = ApolloD2.les.decoupler_4294049672
-	sym = ApolloD2.les.decoupler_4294049608
-	sym = ApolloD2.les.decoupler_4294049544
-	srfN = srfAttach,ApolloD2.prop.skirt_4294455974
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAnchoredDecoupler
-		isEnabled = True
-		ejectionForcePercent = 100
-		isDecoupled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColliderHelper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = ApolloD2.les.decoupler_4294049672
-	partName = Part
-	persistentId = 4108332096
-	pos = 2.45842791,22.6504402,0.575582445
-	attPos = 0,0,0
-	attPos0 = 0.753284693,-0.58018589,0.753284693
-	rot = -0.134318113,0.914063513,-0.0556363985,0.378617555
-	attRot = 0,0,0,1
-	attRot0 = -0.134318113,0.914063513,-0.0556363985,0.378617555
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 6
-	resPri = 0
-	dstg = 1
-	sidx = 0
-	sqor = 7
-	sepI = 6
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	link = ApolloD2.les_4294265808
-	sym = ApolloD2.les.decoupler_4294051214
-	sym = ApolloD2.les.decoupler_4294049608
-	sym = ApolloD2.les.decoupler_4294049544
-	srfN = srfAttach,ApolloD2.prop.skirt_4294455974
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAnchoredDecoupler
-		isEnabled = True
-		ejectionForcePercent = 100
-		isDecoupled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColliderHelper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = ApolloD2.les.decoupler_4294049608
-	partName = Part
-	persistentId = 598070522
-	pos = 2.45842791,22.6504402,-0.930986881
-	attPos = 0,0,0
-	attPos0 = 0.753284693,-0.58018589,-0.753284633
-	rot = -0.134318128,0.914063513,0.0556363836,-0.378617465
-	attRot = 0,0,0,1
-	attRot0 = -0.134318128,0.914063513,0.0556363836,-0.378617465
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 6
-	resPri = 0
-	dstg = 1
-	sidx = 0
-	sqor = 7
-	sepI = 6
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	link = ApolloD2.les_4294265738
-	sym = ApolloD2.les.decoupler_4294051214
-	sym = ApolloD2.les.decoupler_4294049672
-	sym = ApolloD2.les.decoupler_4294049544
-	srfN = srfAttach,ApolloD2.prop.skirt_4294455974
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAnchoredDecoupler
-		isEnabled = True
-		ejectionForcePercent = 100
-		isDecoupled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColliderHelper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = ApolloD2.les.decoupler_4294049544
-	partName = Part
-	persistentId = 2102632884
-	pos = 0.951858521,22.6504402,-0.930986822
-	attPos = 0,0,0
-	attPos0 = -0.753284693,-0.58018589,-0.753284574
-	rot = -0.0556363985,0.378617555,0.134318113,-0.914063513
-	attRot = 0,0,0,1
-	attRot0 = -0.0556363985,0.378617555,0.134318113,-0.914063513
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 6
-	resPri = 0
-	dstg = 1
-	sidx = 0
-	sqor = 7
-	sepI = 6
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	link = ApolloD2.les_4294265668
-	sym = ApolloD2.les.decoupler_4294051214
-	sym = ApolloD2.les.decoupler_4294049672
-	sym = ApolloD2.les.decoupler_4294049608
-	srfN = srfAttach,ApolloD2.prop.skirt_4294455974
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAnchoredDecoupler
-		isEnabled = True
-		ejectionForcePercent = 100
-		isDecoupled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColliderHelper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
 	part = ApolloD2.rcs_4294413826
 	partName = Part
 	persistentId = 218486224
-	pos = 0.80497396,24.5668488,-0.177702203
+	pos = 0.768998206,24.609169,-0.177702203
 	attPos = 0,0,0
-	attPos0 = -0.900169253,-0.330840111,5.36542721E-08
-	rot = 3.48848133E-08,-1,-2.5121481E-15,8.42937027E-08
+	attPos0 = -0.936145008,-0.288520813,5.96046448E-08
+	rot = -5.81418957E-09,-1,0,0
 	attRot = 0,0,0,1
-	attRot0 = 3.48848133E-08,-1,-2.5121481E-15,8.42937027E-08
+	attRot0 = -5.81418957E-09,-1,0,0
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 2
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = ApolloD2.rcs_4294413182
-	sym = ApolloD2.rcs_4294413118
-	sym = ApolloD2.rcs_4294413054
+	sym = ApolloD2.rcs_4294488250
+	sym = ApolloD2.rcs_4294488188
+	sym = ApolloD2.rcs_4294488126
 	srfN = srfAttach,ApolloD2.prop_4294467528
 	EVENTS
 	{
@@ -2005,32 +1729,32 @@ PART
 }
 PART
 {
-	part = ApolloD2.rcs_4294413182
+	part = ApolloD2.rcs_4294488250
 	partName = Part
-	persistentId = 1794373083
-	pos = 1.70514321,24.5668488,0.722466946
+	persistentId = 1358796779
+	pos = 1.70514321,24.609169,0.7584427
 	attPos = 0,0,0
-	attPos0 = 3.54669847E-16,-0.330840111,0.900169194
-	rot = 2.46672851E-08,-0.707106709,-2.46672887E-08,0.707106829
+	attPos0 = 0,-0.288520813,0.936144948
+	rot = -4.11125312E-09,-0.707106829,4.11125312E-09,0.707106829
 	attRot = 0,0,0,1
-	attRot0 = 2.46672851E-08,-0.707106709,-2.46672887E-08,0.707106829
+	attRot0 = -4.11125312E-09,-0.707106829,4.11125312E-09,0.707106829
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 2
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
 	sym = ApolloD2.rcs_4294413826
-	sym = ApolloD2.rcs_4294413118
-	sym = ApolloD2.rcs_4294413054
+	sym = ApolloD2.rcs_4294488188
+	sym = ApolloD2.rcs_4294488126
 	srfN = srfAttach,ApolloD2.prop_4294467528
 	EVENTS
 	{
@@ -2089,32 +1813,32 @@ PART
 }
 PART
 {
-	part = ApolloD2.rcs_4294413118
+	part = ApolloD2.rcs_4294488188
 	partName = Part
-	persistentId = 1940220627
-	pos = 2.60531259,24.5668488,-0.177702397
+	persistentId = 1843170432
+	pos = 2.64128828,24.609169,-0.177702397
 	attPos = 0,0,0
-	attPos0 = 0.900169253,-0.330840111,-1.3234957E-07
-	rot = -4.03701154E-15,1.28005098E-07,-3.48848133E-08,1
+	attPos0 = 0.936145067,-0.288520813,-1.34110451E-07
+	rot = 2.54146307E-16,4.37113883E-08,5.81418957E-09,1
 	attRot = 0,0,0,1
-	attRot0 = -4.03701154E-15,1.28005098E-07,-3.48848133E-08,1
+	attRot0 = 2.54146307E-16,4.37113883E-08,5.81418957E-09,1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 2
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
 	sym = ApolloD2.rcs_4294413826
-	sym = ApolloD2.rcs_4294413182
-	sym = ApolloD2.rcs_4294413054
+	sym = ApolloD2.rcs_4294488250
+	sym = ApolloD2.rcs_4294488126
 	srfN = srfAttach,ApolloD2.prop_4294467528
 	EVENTS
 	{
@@ -2173,32 +1897,32 @@ PART
 }
 PART
 {
-	part = ApolloD2.rcs_4294413054
+	part = ApolloD2.rcs_4294488126
 	partName = Part
-	persistentId = 3274658490
-	pos = 1.70514309,24.5668488,-1.07787144
+	persistentId = 4128788862
+	pos = 1.70514309,24.609169,-1.11384726
 	attPos = 0,0,0
-	attPos0 = -1.07308537E-07,-0.330840111,-0.900169194
-	rot = -2.46672887E-08,0.707106829,-2.46672851E-08,0.707106709
+	attPos0 = -1.1920929E-07,-0.288520813,-0.936145008
+	rot = 4.11125312E-09,0.707106829,4.11125312E-09,0.707106829
 	attRot = 0,0,0,1
-	attRot0 = -2.46672887E-08,0.707106829,-2.46672851E-08,0.707106709
+	attRot0 = 4.11125312E-09,0.707106829,4.11125312E-09,0.707106829
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 2
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
 	sym = ApolloD2.rcs_4294413826
-	sym = ApolloD2.rcs_4294413182
-	sym = ApolloD2.rcs_4294413118
+	sym = ApolloD2.rcs_4294488250
+	sym = ApolloD2.rcs_4294488188
 	srfN = srfAttach,ApolloD2.prop_4294467528
 	EVENTS
 	{
@@ -2231,502 +1955,6 @@ PART
 		ACTIONS
 		{
 			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColliderHelper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = ApolloD2.les_4294040774
-	partName = Part
-	persistentId = 735860864
-	pos = 0.905998707,22.627718,0.621442139
-	attPos = 0,0,0
-	attPos0 = -0.055577144,-0.0404193625,3.7252903E-09
-	rot = -0.134318173,-0.914063632,0.0556364022,0.378617316
-	attRot = 0,0,0,1
-	attRot0 = -1.43423676E-07,-1,-7.4505806E-09,-1.1920929E-07
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 0
-	resPri = 0
-	dstg = 2
-	sidx = 0
-	sqor = 1
-	sepI = 6
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = ApolloD2.les_4294265808
-	sym = ApolloD2.les_4294265738
-	sym = ApolloD2.les_4294265668
-	srfN = srfAttach,ApolloD2.les.decoupler_4294051214
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEngines
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColliderHelper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = SolidFuel
-		amount = 80
-		maxAmount = 80
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = ApolloD2.les_4294265808
-	partName = Part
-	persistentId = 3647975879
-	pos = 2.50428772,22.627718,0.621442258
-	attPos = 0,0,0
-	attPos0 = -0.0555771291,-0.0404193625,-7.45057394E-09
-	rot = -0.0556364544,-0.378617644,0.134318247,0.914063454
-	attRot = 0,0,0,1
-	attRot0 = -1.41561017E-07,-1,-1.117587E-08,-8.94069601E-08
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 0
-	resPri = 0
-	dstg = 2
-	sidx = 0
-	sqor = 1
-	sepI = 6
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = ApolloD2.les_4294040774
-	sym = ApolloD2.les_4294265738
-	sym = ApolloD2.les_4294265668
-	srfN = srfAttach,ApolloD2.les.decoupler_4294049672
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEngines
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColliderHelper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = SolidFuel
-		amount = 80
-		maxAmount = 80
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = ApolloD2.les_4294265738
-	partName = Part
-	persistentId = 1501737083
-	pos = 2.50428772,22.627718,-0.976846695
-	attPos = 0,0,0
-	attPos0 = -0.0555771366,-0.0404193699,7.45057749E-09
-	rot = 0.0556364395,0.378617346,0.134318262,0.914063513
-	attRot = 0,0,0,1
-	attRot0 = -1.49011612E-07,-1,-1.11758709E-08,-1.1920929E-07
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 0
-	resPri = 0
-	dstg = 2
-	sidx = 0
-	sqor = 1
-	sepI = 6
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = ApolloD2.les_4294040774
-	sym = ApolloD2.les_4294265808
-	sym = ApolloD2.les_4294265668
-	srfN = srfAttach,ApolloD2.les.decoupler_4294049608
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEngines
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColliderHelper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = SolidFuel
-		amount = 80
-		maxAmount = 80
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = ApolloD2.les_4294265668
-	partName = Part
-	persistentId = 2879226611
-	pos = 0.905998707,22.627718,-0.976846635
-	attPos = 0,0,0
-	attPos0 = -0.0555771552,-0.0404193625,1.11758691E-08
-	rot = 0.134318247,0.914063454,0.0556364544,0.378617644
-	attRot = 0,0,0,1
-	attRot0 = -1.41561017E-07,-1,-1.117587E-08,-8.94069601E-08
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 0
-	resPri = 0
-	dstg = 2
-	sidx = 0
-	sqor = 1
-	sepI = 6
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = ApolloD2.les_4294040774
-	sym = ApolloD2.les_4294265808
-	sym = ApolloD2.les_4294265738
-	srfN = srfAttach,ApolloD2.les.decoupler_4294049544
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEngines
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColliderHelper
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = SolidFuel
-		amount = 80
-		maxAmount = 80
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = ApolloD2.interstage_4294229884
-	partName = Part
-	persistentId = 869383512
-	pos = 1.70514321,21.6400433,-0.177702263
-	attPos = 0,0,0
-	attPos0 = 0,-1.59058189,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 5
-	resPri = 0
-	dstg = 1
-	sidx = 0
-	sqor = 6
-	sepI = 5
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	attN = top,ApolloD2.prop.skirt_4294455974_0|0.4423937|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDecouple
-		isEnabled = True
-		ejectionForcePercent = 100
-		isDecoupled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleToggleCrossfeed
-		isEnabled = True
-		crossfeedStatus = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-			EnableAction
-			{
-				actionGroup = None
-			}
-			DisableAction
 			{
 				actionGroup = None
 			}
@@ -2766,12 +1994,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 2
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 2
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -2869,6 +2097,706 @@ PART
 		name = ElectricCharge
 		amount = 300
 		maxAmount = 300
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = ApolloD2.les.decoupler_4294051214
+	partName = Part
+	persistentId = 1906316259
+	pos = 0.951364219,22.7752037,0.576076567
+	attPos = 0,0,0
+	attPos0 = -0.753778994,-0.455421448,0.753778815
+	rot = -0.0584042892,0.378200442,-0.14100045,0.913056612
+	attRot = 0,0,0,1
+	attRot0 = -0.0584042892,0.378200442,-0.14100045,0.913056612
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 5
+	resPri = 0
+	dstg = 1
+	sidx = 0
+	sqor = 5
+	sepI = 5
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = ApolloD2.les_4294483690
+	sym = ApolloD2.les.decoupler_4294487684
+	sym = ApolloD2.les.decoupler_4294487622
+	sym = ApolloD2.les.decoupler_4294487560
+	srfN = srfAttach,ApolloD2.prop.skirt_4294455974
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColliderHelper
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = ApolloD2.les.decoupler_4294487684
+	partName = Part
+	persistentId = 3795274181
+	pos = 2.45892191,22.7752037,0.576076746
+	attPos = 0,0,0
+	attPos0 = 0.753778696,-0.455421448,0.753778994
+	rot = -0.141000435,0.913056612,-0.0584043041,0.378200412
+	attRot = 0,0,0,1
+	attRot0 = -0.141000435,0.913056612,-0.0584043041,0.378200412
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 5
+	resPri = 0
+	dstg = 1
+	sidx = 0
+	sqor = 5
+	sepI = 5
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = ApolloD2.les_4294483620
+	sym = ApolloD2.les.decoupler_4294051214
+	sym = ApolloD2.les.decoupler_4294487622
+	sym = ApolloD2.les.decoupler_4294487560
+	srfN = srfAttach,ApolloD2.prop.skirt_4294455974
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColliderHelper
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = ApolloD2.les.decoupler_4294487622
+	partName = Part
+	persistentId = 735245632
+	pos = 2.45892215,22.7752037,-0.931481123
+	attPos = 0,0,0
+	attPos0 = 0.753778934,-0.455421448,-0.753778875
+	rot = -0.14100045,0.913056552,0.0584042929,-0.378200442
+	attRot = 0,0,0,1
+	attRot0 = -0.14100045,0.913056552,0.0584042929,-0.378200442
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 5
+	resPri = 0
+	dstg = 1
+	sidx = 0
+	sqor = 5
+	sepI = 5
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = ApolloD2.les_4294483550
+	sym = ApolloD2.les.decoupler_4294051214
+	sym = ApolloD2.les.decoupler_4294487684
+	sym = ApolloD2.les.decoupler_4294487560
+	srfN = srfAttach,ApolloD2.prop.skirt_4294455974
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColliderHelper
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = ApolloD2.les.decoupler_4294487560
+	partName = Part
+	persistentId = 160967201
+	pos = 0.951364398,22.7752037,-0.931481123
+	attPos = 0,0,0
+	attPos0 = -0.753778815,-0.455421448,-0.753778875
+	rot = -0.0584043041,0.378200412,0.141000435,-0.913056612
+	attRot = 0,0,0,1
+	attRot0 = -0.0584043041,0.378200412,0.141000435,-0.913056612
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 5
+	resPri = 0
+	dstg = 1
+	sidx = 0
+	sqor = 5
+	sepI = 5
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = ApolloD2.les_4294486324
+	sym = ApolloD2.les.decoupler_4294051214
+	sym = ApolloD2.les.decoupler_4294487684
+	sym = ApolloD2.les.decoupler_4294487622
+	srfN = srfAttach,ApolloD2.prop.skirt_4294455974
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColliderHelper
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = ApolloD2.les_4294486324
+	partName = Part
+	persistentId = 3129745958
+	pos = 0.904853463,22.7518711,-0.977992117
+	attPos = 0,0,0
+	attPos0 = -0.0556737557,-0.042087771,-3.81842256E-08
+	rot = 0.141000345,0.913056612,0.0584042594,0.378200471
+	attRot = 0,0,0,1
+	attRot0 = 9.49949026E-08,-1,0,-5.96046448E-08
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 2
+	sidx = 0
+	sqor = 4
+	sepI = 5
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = ApolloD2.les_4294483690
+	sym = ApolloD2.les_4294483620
+	sym = ApolloD2.les_4294483550
+	srfN = srfAttach,ApolloD2.les.decoupler_4294487560
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColliderHelper
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 80
+		maxAmount = 80
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = ApolloD2.les_4294483690
+	partName = Part
+	persistentId = 3460401609
+	pos = 0.904853225,22.7518711,0.622587502
+	attPos = 0,0,0
+	attPos0 = -0.0556737557,-0.042087771,-4.93600893E-08
+	rot = -0.141000345,-0.913056672,0.0584042631,0.378200352
+	attRot = 0,0,0,1
+	attRot0 = 1.08033404E-07,-1,3.72528985E-09,-8.94069601E-08
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 2
+	sidx = 0
+	sqor = 4
+	sepI = 5
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = ApolloD2.les_4294486324
+	sym = ApolloD2.les_4294483620
+	sym = ApolloD2.les_4294483550
+	srfN = srfAttach,ApolloD2.les.decoupler_4294051214
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColliderHelper
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 80
+		maxAmount = 80
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = ApolloD2.les_4294483620
+	partName = Part
+	persistentId = 98869485
+	pos = 2.50543284,22.7518711,0.62258774
+	attPos = 0,0,0
+	attPos0 = -0.0556737259,-0.042087771,-5.2154018E-08
+	rot = -0.0584042482,-0.378200471,0.14100033,0.913056612
+	attRot = 0,0,0,1
+	attRot0 = 1.19209275E-07,-1,3.72528985E-09,-5.96046377E-08
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 2
+	sidx = 0
+	sqor = 4
+	sepI = 5
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = ApolloD2.les_4294486324
+	sym = ApolloD2.les_4294483690
+	sym = ApolloD2.les_4294483550
+	srfN = srfAttach,ApolloD2.les.decoupler_4294487684
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColliderHelper
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 80
+		maxAmount = 80
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = ApolloD2.les_4294483550
+	partName = Part
+	persistentId = 4188521894
+	pos = 2.50543308,22.7518711,-0.977992058
+	attPos = 0,0,0
+	attPos0 = -0.0556737408,-0.0420877561,-7.45058415E-09
+	rot = 0.0584042743,0.378200382,0.14100036,0.913056612
+	attRot = 0,0,0,1
+	attRot0 = 8.94069672E-08,-1,7.4505806E-09,-5.96046448E-08
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 2
+	sidx = 0
+	sqor = 4
+	sepI = 5
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = ApolloD2.les_4294486324
+	sym = ApolloD2.les_4294483690
+	sym = ApolloD2.les_4294483620
+	srfN = srfAttach,ApolloD2.les.decoupler_4294487622
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColliderHelper
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 80
+		maxAmount = 80
 		flowState = True
 		isTweakable = True
 		hideFlow = False
